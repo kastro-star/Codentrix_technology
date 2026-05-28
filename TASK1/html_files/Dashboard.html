@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP Dashboard</title>
+    <link rel="stylesheet" href="../css_files/Dashboard.css">
+</head>
+<!-- Dashboard page  -->
+<body>
+
+    <!-- Nav bar contents -->
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="../assets/images/logo-horizontal.webp">
+        </div>
+
+        <nav class="menu">
+            <ul>
+
+                <li>Dashboard</li>
+
+                <li class="dropdown">
+                    Users&nbsp;&#9660;
+                    <div class="dropdown-menu">
+                        <p>Create User</p>
+                        <p>Manage Users</p>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    Reports&nbsp;&#9660;
+                    <div class="dropdown-menu">
+                        <p>Sales</p>
+                        <p>Customers</p>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    Settings&nbsp;&#9660;
+                    <div class="dropdown-menu">
+                        <p>Profile</p>
+                        <p>System</p>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+<!-- left side customer logo section -->
+        <div class="user-box">
+            <img src="../assets/images/customer.png" alt="user">
+
+            <div class="user-dropdown">
+                <p>Admin</p>
+                <p>Profile</p>
+                <p>Logout</p>
+            </div>
+        </div>
+
+    </header>
+    <!-- New user create nav button -->
+    <div class="add-btn">
+        <button type="button" id="submit" onclick="window.location.href='form.html'">Create an new User</button>
+    </div>
+
+    <section class="top-bar">
+
+        <h2>Customer Management</h2>
+
+        <input type="text" placeholder="Search customers...">
+
+    </section>
+
+<!-- Table section -->
+    <section class="table-box">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>Kastro</td>
+                    <td>kastro2004@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>Chennai</td>
+                    <td><span class="active">Active</span></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Ajay</td>
+                    <td>Ajay2003@gmail.com</td>
+                    <td>9123456780</td>
+                    <td>Madurai</td>
+                    <td><span class="inactive">Inactive</span></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Kumaran</td>
+                    <td>Kumaran2001@gmail.com</td>
+                    <td>9988776655</td>
+                    <td>Madurai</td>
+                    <td><span class="active">Active</span></td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </section>
+    <!-- pagination for future JS edits -->
+    <div class="pagination">
+        <button>Prev</button>
+        <button style="background-color: rgb(219, 186, 186); color: black;">1</button>
+        <button style="background-color: rgb(219, 186, 186); color: black;">2</button>
+        <button style="background-color: rgb(219, 186, 186); color: black;">3</button>
+        <button>Next</button>
+    </div>
+
+</body>
+
+</html>
