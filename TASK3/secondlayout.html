@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ontheshelf. - Twisted Shrimp Store</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* number hover I--- konduvara option */
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+    </style>
+</head>
+<body class="bg-[#f8fafc] font-sans antialiased text-gray-900">
+
+    <!-- navbar section -->
+    <header class="bg-[#0f1c70] py-3 px-4 md:px-6 shadow-md">
+        <div class="max-w-[1400px] mx-auto flex flex-wrap items-center justify-between gap-3">
+            
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-box-open text-white text-xl"></i>
+                <span class="text-white text-2xl font-bold tracking-tight">ontheshelf.</span>
+            </div>
+            
+            
+            <div class="flex-1 w-full md:w-auto md:max-w-lg lg:max-w-2xl order-last md:order-none">
+                <div class="relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-300 text-sm"></i>
+                    <input type="text" placeholder="Search products in Twisted Shrimp Store" class="w-full bg-[#1a2b8a] border border-[#2d3d9e] rounded-md py-1.5 pl-10 pr-4 text-sm text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-blue-400 transition">
+                </div>
+            </div>
+
+           
+            <div class="flex items-center gap-5">
+                <i class="fa-regular fa-heart text-white text-xl cursor-pointer hover:text-red-400 transition"></i>
+                <div class="relative cursor-pointer">
+                    <i class="fa-solid fa-cart-shopping text-white text-xl hover:text-green-400 transition"></i>
+                    <span class="absolute -top-1.5 -right-1.5 bg-white text-[#0f1c70] text-[9px] font-bold h-4 w-4 rounded-full flex items-center justify-center border border-[#0f1c70]">2</span>
+                </div>
+                <img src="src/images/customer.png" alt="Profile" class="h-9 w-9 rounded-full border-2 border-white/30">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main container-->
+    <main class="max-w-[1400px] mx-auto px-4 py-6 md:py-10">
+
+        <!-- back to page -->
+        <div class="mb-6">
+            <a href="index.html" class="inline-flex items-center text-gray-500 hover:text-gray-700 text-sm transition font-medium">
+                <i class="fa-solid fa-arrow-left mr-2"></i> Back to all stores
+            </a>
+        </div>
+
+        <!--  -->
+        <div class="bg-transparent rounded-xl mb-10 flex flex-col lg:flex-row items-center justify-between gap-6">
+           
+            <div class="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-[#0f1c70] text-3xl shadow-md border border-gray-100 shrink-0">
+                    <i class="fa-solid fa-shrimp"></i>
+                </div>
+                <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <h2 class="text-2xl font-bold text-gray-900 tracking-tight">Twisted Shrimp</h2>
+                    <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500 mt-1">
+                        <span class="flex items-center gap-1">
+                            <i class="fa-regular fa-clock"></i> Min. ₹10
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <i class="fa-solid fa-tag"></i> 0.50
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <i class="fa-regular fa-clock"></i> 20-30 min.
+                        </span>
+                        <span class="flex items-center gap-2 ml-1 border-l pl-3 border-gray-300">
+                            <span class="flex items-center gap-1 text-amber-500 font-semibold">
+                                <i class="fa-solid fa-star"></i> 4.8
+                            </span>
+                            <i class="fa-regular fa-heart text-pink-500"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right-side banner part -->
+            <div class="w-full lg:w-auto">
+                <div class="bg-[#0f1c70] rounded-lg px-6 py-3 flex items-center gap-5 shadow-sm w-full lg:w-auto justify-center">
+                    <div class="flex flex-col items-center border-r border-white/20 pr-5">
+                        <span class="text-2xl font-black text-pink-500 leading-none">-50%</span>
+                        <span class="text-[10px] text-gray-300 leading-tight text-center">On all bakery products</span>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <p class="text-[11px] text-gray-300 leading-tight">when you order</p>
+                        <p class="text-white font-bold text-sm">before 9 PM every day!</p>
+                    </div>
+                    <div class="bg-white/10 p-1.5 rounded-md">
+                        <i class="fa-solid fa-bread-slice text-white text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories option-->
+        <div class="mb-8">
+            <h3 class="text-lg font-bold text-gray-900 mb-4">Shop by categories</h3>
+            <div class="flex flex-wrap gap-11">
+                <a href="Thirdlayout.html">
+                <button  class="px-25 py-4 rounded border border-gray-200 bg-white text-gray-600 hover:border-blue-400 hover:text-blue-500 transition flex items-center gap-2 text-sm font-medium shadow-sm">
+                    <i class="fa-regular fa-circle-check text-gray-400"></i> Best deals
+                </button></a>
+                <button class="px-25 py-4 rounded border border-blue-600 bg-white text-blue-700 transition flex items-center gap-2 text-sm font-medium ring-1 ring-blue-600 shadow-sm">
+                    <i class="fa-solid fa-utensils"></i> Food
+                </button>
+                <button class="px-25 py-4 rounded border border-gray-200 bg-white text-gray-600 hover:border-blue-400 hover:text-blue-500 transition flex items-center gap-2 text-sm font-medium shadow-sm">
+                    <i class="fa-solid fa-wine-glass text-gray-400"></i> Beverages
+                </button>
+                <button class="px-25 py-4 rounded border border-gray-200 bg-white text-gray-600 hover:border-blue-400 hover:text-blue-500 transition flex items-center gap-2 text-sm font-medium shadow-sm">
+                    <i class="fa-solid fa-house text-gray-400"></i> Other
+                </button>
+            </div>
+        </div>
+
+        <hr class="border-t border-gray-300 my-6">
+
+        <!--all items section-->
+        <div class="mb-10">
+            <div class="flex justify-between items-center mb-4">
+                <h4 class="font-semibold text-gray-800 text-sm flex items-center gap-1">
+                    Food subcategories<i class="fa-solid fa-chevron-up text-[10px] text-gray-500"></i>
+                </h4>
+            </div>
+            <div class="flex flex-wrap gap-3">
+                <button class="px-15 py-5 rounded border border-gray-200 bg-white  hover:text-gray-700 hover:bg-gray-50 transition flex items-center gap-2 text-xs shadow-sm text-gray-800">
+                    <i class="fa-regular fa-lemon text-gray-400"></i> Fruits
+                </button>
+                <button class="px-15 py-5 rounded border border-[#2d46f5] bg-[#2d46f5]  transition flex items-center gap-2 text-xs shadow-sm text-gray-800">
+                    <i class="fa-solid fa-carrot"></i> Vegetables
+                </button>
+                <button class="px-15 py-5 rounded border border-gray-200 bg-white text-gray-900 hover:text-gray-700 hover:bg-gray-50 transition flex items-center gap-2 text-xs shadow-sm">
+                    <i class="fa-solid fa-bread-slice text-gray-400"></i> Bakery
+                </button>
+                <button class="px-15 py-5 rounded border border-gray-200 bg-white text-gray-900 hover:text-gray-700 hover:bg-gray-50 transition flex items-center gap-2 text-xs shadow-sm">
+                    <i class="fa-solid fa-drumstick-bite text-gray-400"></i> Meat
+                </button>
+                <button class="px-15 py-5 rounded border border-gray-200 bg-white text-gray-900 hover:text-gray-700 hover:bg-gray-50 transition flex items-center gap-2 text-xs shadow-sm">
+                    <i class="fa-solid fa-cookie-bite text-gray-400"></i> Snacks
+                </button>
+                <button class="px-15 py-5 rounded border border-gray-200 bg-white text-gray-900 hover:text-gray-700 hover:bg-gray-50 transition flex items-center gap-2 text-xs shadow-sm">
+                    <i class="fa-solid fa-cow text-gray-400"></i> Dairy
+                </button>
+                <button class="px-15 py-5 rounded border border-gray-200 bg-white text-gray-900 hover:text-gray-700 hover:bg-gray-50 transition flex items-center gap-2 text-xs shadow-sm">
+                    <i class="fa-solid fa-fish text-gray-400"></i> Fish
+                </button>
+                <button class="px-15 py-5 rounded border border-gray-200 bg-white text-gray-900 hover:text-gray-700 hover:bg-gray-50 transition flex items-center gap-2 text-xs shadow-sm">
+                    <i class="fa-solid fa-pepper-hot text-gray-400"></i> Spices
+                </button>
+                <button class="px-15 py-5 rounded border border-gray-200 bg-white text-gray-900 hover:text-gray-700 hover:bg-gray-50 transition flex items-center gap-2 text-xs shadow-sm">
+                    <i class="fa-solid fa-snowflake text-gray-400"></i> Frozen
+                </button>
+                <button class="px-15 py-5 rounded border border-gray-200 bg-white text-gray-900 hover:text-gray-700 hover:bg-gray-50 transition flex items-center gap-2 text-xs shadow-sm">
+                    <i class="fa-solid fa-leaf text-gray-400"></i> Gluten-free
+                </button>
+                <button class="px-15 py-5 rounded border border-gray-200 bg-white text-gray-900 hover:text-gray-700 hover:bg-gray-50 transition flex items-center gap-2 text-xs shadow-sm">
+                    <i class="fa-solid fa-seedling text-gray-400"></i> Vegan
+                </button>
+                <button class="px-15 py-5 rounded border border-gray-200 bg-white text-gray-900 hover:text-gray-700 hover:bg-gray-50 transition flex items-center gap-2 text-xs shadow-sm">
+                    <i class="fa-solid fa-angles-right text-gray-400"></i> All food
+                </button>
+            </div>
+        </div>
+
+      
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-5 gap-2">
+            <div>
+                <h2 class="text-xl font-bold text-gray-900">Products</h2>
+                <p class="text-xs text-gray-900 mt-0.5">Showing 112 results</p>
+            </div>
+            <div class="flex items-center gap-3 text-sm text-gray-900 bg-white px-3 py-1.5 rounded-full shadow-sm border border-gray-100">
+                <i class="fa-solid fa-list text-gray-900"></i>
+                <div class="flex items-center gap-1 cursor-pointer hover:text-gray-800">
+                    <span class="font-medium">Sort by: Most Popular</span>
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--All products list using grid layout for all mobile screens  -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-5">
+
+           
+            <div class="bg-white p-3.5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-200 flex flex-col relative group">
+                <div class="absolute top-3 left-3 z-10">
+                    <i class="fa-regular fa-heart text-gray-400 hover:text-red-500 cursor-pointer text-lg transition"></i>
+                </div>
+                <div class="h-32 w-full flex justify-center items-center mb-2">
+                    <img src="src/images/vegetables/1.jpg" alt="Cucumber" class="h-full object-contain mix-blend-multiply">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm text-gray-700 font-medium">Cucumber</div>
+                        <div class="flex items-center gap-1">
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-minus"></i></button>
+                            <span class="text-xs font-medium w-3 text-center">1</span>
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between mt-1">
+                        <div class="font-bold text-gray-900 text-sm">₹2 <span class="text-[10px] font-normal text-gray-400">/ pc</span></div>
+                    </div>
+                    <button class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white text-xs font-semibold py-1.5 rounded shadow-sm transition">Add to basket</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-200 flex flex-col relative group">
+                <div class="absolute top-3 left-3 z-10 flex flex-col gap-1">
+                    <i class="fa-regular fa-heart text-gray-400 hover:text-red-500 cursor-pointer text-lg transition"></i>
+                </div>
+                <div class="h-32 w-full flex justify-center items-center mb-2">
+                    <img src="src/images/vegetables/2.jpg" alt="Broccoli" class="h-full object-contain mix-blend-multiply">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm text-gray-700 font-medium">Broccoli</div>
+                        <div class="flex items-center gap-1">
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-minus"></i></button>
+                            <span class="text-xs font-medium w-3 text-center">1</span>
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between mt-1">
+                        <div class="font-bold text-gray-900 text-sm">₹2 <span class="text-[10px] font-normal text-gray-400">/ pc</span></div>
+                    </div>
+                    <button class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white text-xs font-semibold py-1.5 rounded shadow-sm transition">Add to basket</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-200 flex flex-col relative group">
+                <div class="absolute top-3 left-3 z-10">
+                    <i class="fa-regular fa-heart text-gray-400 hover:text-red-500 cursor-pointer text-lg text-pink-500 transition"></i>
+                </div>
+                <div class="h-32 w-full flex justify-center items-center mb-2">
+                    <img src="src/images/vegetables/3.jpg" alt="Peas" class="h-full object-contain mix-blend-multiply">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm text-gray-700 font-medium">Peas</div>
+                        <div class="flex items-center gap-1">
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-minus"></i></button>
+                            <span class="text-xs font-medium w-3 text-center">1</span>
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between mt-1">
+                        <div class="font-bold text-gray-900 text-sm">₹0.87 <span class="text-[10px] font-normal text-gray-400">/ pc</span></div>
+                    </div>
+                    <button class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white text-xs font-semibold py-1.5 rounded shadow-sm transition">Add to basket</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-200 flex flex-col relative group">
+                <div class="absolute top-3 left-3 z-10">
+                    <i class="fa-regular fa-heart text-gray-400 hover:text-red-500 cursor-pointer text-lg transition"></i>
+                </div>
+                <div class="h-32 w-full flex justify-center items-center mb-2">
+                    <img src="src/images/vegetables/4.jpg" alt="Hokkaido" class="h-full object-contain mix-blend-multiply">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm text-gray-700 font-medium">Hokkaido</div>
+                        <div class="flex items-center gap-1">
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-minus"></i></button>
+                            <span class="text-xs font-medium w-3 text-center">1</span>
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between mt-1">
+                        <div class="font-bold text-gray-900 text-sm">₹3.49 <span class="text-[10px] font-normal text-gray-400">/ pc</span></div>
+                    </div>
+                    <button class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white text-xs font-semibold py-1.5 rounded shadow-sm transition">Add to basket</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-200 flex flex-col relative group">
+                <div class="absolute top-3 left-3 z-10">
+                    <i class="fa-regular fa-heart text-gray-400 hover:text-red-500 cursor-pointer text-lg transition"></i>
+                </div>
+                <div class="h-32 w-full flex justify-center items-center mb-2">
+                    <img src="src/images/vegetables/5.jpg" alt="Eggplant" class="h-full object-contain mix-blend-multiply">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm text-gray-700 font-medium">Eggplant</div>
+                        <div class="flex items-center gap-1">
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-minus"></i></button>
+                            <span class="text-xs font-medium w-3 text-center">1</span>
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between mt-1">
+                        <div class="font-bold text-gray-900 text-sm">₹0.69 <span class="text-[10px] font-normal text-gray-400">/ pc</span></div>
+                    </div>
+                    <button class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white text-xs font-semibold py-1.5 rounded shadow-sm transition">Add to basket</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-200 flex flex-col relative group">
+                <div class="absolute top-3 left-3 z-10">
+                    <i class="fa-regular fa-heart text-gray-400 hover:text-red-500 cursor-pointer text-lg transition"></i>
+                </div>
+                <div class="h-32 w-full flex justify-center items-center mb-2">
+                    <img src="src/images/vegetables/6.jpg" alt="Cherry tomatoes" class="h-full object-contain mix-blend-multiply">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm text-gray-700 font-medium">Cherry tomatoes</div>
+                        <div class="flex items-center gap-1">
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-minus"></i></button>
+                            <span class="text-xs font-medium w-3 text-center">1</span>
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between mt-1">
+                        <div class="font-bold text-gray-900 text-sm">₹0.99 <span class="text-[10px] font-normal text-gray-400">/ bag</span></div>
+                    </div>
+                    <button class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white text-xs font-semibold py-1.5 rounded shadow-sm transition">Add to basket</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-200 flex flex-col relative group">
+                <div class="absolute top-3 left-3 z-10">
+                    <i class="fa-regular fa-heart text-gray-400 hover:text-red-500 cursor-pointer text-lg transition"></i>
+                </div>
+                <div class="h-32 w-full flex justify-center items-center mb-2">
+                    <img src="src/images/vegetables/7.jpg" alt="Chili pepper" class="h-full object-contain mix-blend-multiply">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm text-gray-700 font-medium">Chili pepper</div>
+                        <div class="flex items-center gap-1">
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-minus"></i></button>
+                            <span class="text-xs font-medium w-3 text-center">1</span>
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between mt-1">
+                        <div class="font-bold text-gray-900 text-sm">₹0.99 <span class="text-[10px] font-normal text-gray-400">/ pc</span></div>
+                    </div>
+                    <button class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white text-xs font-semibold py-1.5 rounded shadow-sm transition">Add to basket</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-200 flex flex-col relative group">
+                <div class="absolute top-3 left-3 z-10">
+                    <i class="fa-regular fa-heart text-gray-400 hover:text-red-500 cursor-pointer text-lg transition"></i>
+                </div>
+                <div class="h-32 w-full flex justify-center items-center mb-2">
+                    <img src="src/images/vegetables/8.jpg" alt="Garlic" class="h-full object-contain mix-blend-multiply">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm text-gray-700 font-medium">Garlic</div>
+                        <div class="flex items-center gap-1">
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-minus"></i></button>
+                            <span class="text-xs font-medium w-3 text-center">1</span>
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between mt-1">
+                        <div class="font-bold text-gray-900 text-sm">₹2 <span class="text-[10px] font-normal text-gray-400">/ 100g</span></div>
+                    </div>
+                    <button class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white text-xs font-semibold py-1.5 rounded shadow-sm transition">Add to basket</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-200 flex flex-col relative group">
+                <div class="absolute top-3 left-3 z-10">
+                    <i class="fa-regular fa-heart text-gray-400 hover:text-red-500 cursor-pointer text-lg transition"></i>
+                </div>
+                <div class="h-32 w-full flex justify-center items-center mb-2">
+                    <img src="src/images/vegetables/9.jpg" alt="Corn" class="h-full object-contain mix-blend-multiply">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm text-gray-700 font-medium">Corn</div>
+                        <div class="flex items-center gap-1">
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-minus"></i></button>
+                            <span class="text-xs font-medium w-3 text-center">1</span>
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between mt-1">
+                        <div class="font-bold text-gray-900 text-sm">₹0.87 <span class="text-[10px] font-normal text-gray-400">/ pc</span></div>
+                    </div>
+                    <button class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white text-xs font-semibold py-1.5 rounded shadow-sm transition">Add to basket</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-200 flex flex-col relative group">
+                <div class="absolute top-3 left-3 z-10">
+                    <i class="fa-regular fa-heart text-gray-400 hover:text-red-500 cursor-pointer text-lg transition"></i>
+                </div>
+                <div class="h-32 w-full flex justify-center items-center mb-2">
+                    <img src="src/images/vegetables/10.jpg" alt="Cabbage" class="h-full object-contain mix-blend-multiply">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm text-gray-700 font-medium">Cabbage</div>
+                        <div class="flex items-center gap-1">
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-minus"></i></button>
+                            <span class="text-xs font-medium w-3 text-center">1</span>
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between mt-1">
+                        <div class="font-bold text-gray-900 text-sm">₹3.49 <span class="text-[10px] font-normal text-gray-400">/ pc</span></div>
+                    </div>
+                    <button class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white text-xs font-semibold py-1.5 rounded shadow-sm transition">Add to basket</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-200 flex flex-col relative group">
+                <div class="absolute top-3 left-3 z-10">
+                    <i class="fa-regular fa-heart text-gray-400 hover:text-red-500 cursor-pointer text-lg transition"></i>
+                </div>
+                <div class="h-32 w-full flex justify-center items-center mb-2">
+                    <img src="src/images/vegetables/11.jpg" alt="Onion" class="h-full object-contain mix-blend-multiply">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm text-gray-700 font-medium">Onion</div>
+                        <div class="flex items-center gap-1">
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-minus"></i></button>
+                            <span class="text-xs font-medium w-3 text-center">1</span>
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between mt-1">
+                        <div class="font-bold text-gray-900 text-sm">₹0.69 <span class="text-[10px] font-normal text-gray-400">/ pc</span></div>
+                    </div>
+                    <button class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white text-xs font-semibold py-1.5 rounded shadow-sm transition">Add to basket</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-3.5 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-200 flex flex-col relative group">
+                <div class="absolute top-3 left-3 z-10">
+                    <i class="fa-regular fa-heart text-gray-400 hover:text-red-500 cursor-pointer text-lg transition"></i>
+                </div>
+                <div class="h-32 w-full flex justify-center items-center mb-2">
+                    <img src="src/images/vegetables/12.jpg" alt="Sweet potatoes" class="h-full object-contain mix-blend-multiply">
+                </div>
+                <div class="flex-grow">
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm text-gray-700 font-medium">Sweet potatoes</div>
+                        <div class="flex items-center gap-1">
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-minus"></i></button>
+                            <span class="text-xs font-medium w-3 text-center">1</span>
+                            <button class="w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center text-[10px] text-gray-500 hover:bg-gray-100 transition"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-between mt-1">
+                        <div class="font-bold text-gray-900 text-sm">₹0.99 <span class="text-[10px] font-normal text-gray-400">/ 100g</span></div>
+                    </div>
+                    <button class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white text-xs font-semibold py-1.5 rounded shadow-sm transition">Add to basket</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-8 flex justify-center pb-10">
+            <button class="bg-white hover:bg-gray-50 text-gray-600 border border-gray-200 px-8 py-2 rounded-[99px] text-sm transition shadow-sm font-medium">Load more</button>
+        </div>
+    </main>
+    <!-- downloading section -->
+    <section class="bg-gray-50 border-t border-gray-200 py-16">
+        <div class="max-w-[1400px] mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Download the ontheshelf. app <br> and shop from anywhere!</h2>
+                <p class="text-gray-500 mb-6">The app is now available in different stores supporting all systems!</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                    <button class="bg-black hover:bg-gray-800 text-white flex items-center px-4 py-2 rounded-lg gap-3 transition w-40 justify-center">
+                        <i class="fa-brands fa-apple text-2xl"></i>
+                        <div class="text-left leading-tight">
+                            <p class="text-[10px] font-light">Download on the</p>
+                            <p class="text-sm font-bold">App Store</p>
+                        </div>
+                    </button>
+                    <button class="bg-black hover:bg-gray-800 text-white flex items-center px-4 py-2 rounded-lg gap-3 transition w-40 justify-center">
+                        <i class="fa-brands fa-google-play text-2xl"></i>
+                        <div class="text-left leading-tight">
+                            <p class="text-[10px] font-light">GET IT ON</p>
+                            <p class="text-sm font-bold">Google Play</p>
+                        </div>
+                    </button>
+                    <button class="bg-black hover:bg-gray-800 text-white flex items-center px-4 py-2 rounded-lg gap-3 transition w-40 justify-center">
+                        <i class="fa-solid fa-pen-nib text-xl"></i>
+                        <div class="text-left leading-tight">
+                            <p class="text-[10px] font-light">Download from</p>
+                            <p class="text-sm font-bold">Uizard</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full">
+                <img src="src/images/bottom-img.webp" alt="App Mockup" class="rounded-xl shadow-xl w-full object-cover max-h-80 md:max-h-full border border-gray-200">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer contents -->
+    <footer class="bg-[#0f1c70] text-white py-14">
+        <div class="max-w-[1400px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+            <div class="flex flex-col items-center md:items-start gap-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-box-open text-xl"></i>
+                    <span class="text-2xl font-bold tracking-tight">ontheshelf.</span>
+                </div>
+                <p class="text-gray-300 text-sm text-center md:text-left">Fresh goods delivered to your doorstep!</p>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="text-white hover:text-green-400 transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-green-400 transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-green-400 transition"><i class="fa-brands fa-twitter text-xl"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center md:items-end gap-2">
+                <p class="font-medium">Need help?</p>
+                <p class="text-gray-300 text-sm">Our support is here for you 24/7!</p>
+                <div class="flex items-center gap-2 mt-1">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="font-medium text-lg">+91 8428859290</p>
+                </div>
+                <div class="flex items-center gap-2 mt-1">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="font-medium">kastro2004@gmail.com/p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ontheshelf. - Fresh goods delivered</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<!-- Starting entrence page  -->
+<body class="bg-white font-sans text-gray-900">
+
+    <!-- company name navbar setup -->
+    <header class="flex items-center justify-between px-4 md:px-6 py-4 hero-pattern text-white">
+        <!-- top image above contents -->
+        <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-box-open text-lg md:text-xl"></i>
+            <span class="text-xl md:text-2xl font-bold tracking-tight">ontheshelf.</span>
+        </div>
+<!-- Dropdown menu bar of US icon -->
+        <!-- Right Side Actions -->
+        <div class="flex items-center space-x-2 md:space-x-4">
+
+  
+  <div class="relative group hidden sm:flex">
+
+    
+    <div class="bg-white/20 hover:bg-white/30 border border-white/30 px-2 md:px-3 py-1 rounded-md cursor-pointer flex items-center text-xs md:text-sm font-medium transition">
+      US
+      <i class="fa-solid fa-chevron-down ml-1 md:ml-2 text-[10px] md:text-xs"></i>
+    </div>
+
+    
+    <div class="absolute top-full left-0 mt-2 w-32 bg-white text-black rounded-md shadow-lg hidden group-hover:block z-50">
+
+      <p class="px-3 py-2 hover:bg-gray-100 cursor-pointer">USA</p>
+      <p class="px-3 py-2 hover:bg-gray-100 cursor-pointer">India</p>
+      <p class="px-3 py-2 hover:bg-gray-100 cursor-pointer">Russia</p>
+      <p class="px-3 py-2 hover:bg-gray-100 cursor-pointer">Korea</p>
+
+    </div>
+
+  </div>
+<!-- top right corner element -->
+  <!-- Button -->
+  <button class="bg-green-500 hover:bg-green-600 text-white px-3 md:px-5 py-2 rounded-md font-semibold text-xs md:text-sm shadow-md transition whitespace-nowrap">
+    Create account
+  </button>
+
+</div>
+    </header>
+
+    <!-- image above centre contents  -->
+    <section class="hero-pattern text-white py-12 md:py-20 px-4 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h1 class="text-3xl md:text-6xl font-bold leading-tight mb-6 md:mb-10 drop-shadow-lg">
+                Fresh goods delivered to <br> your doorstep!
+            </h1>
+            
+            <!-- search bar elements-->
+            <div class="relative max-w-lg mx-auto bg-white rounded-full shadow-2xl flex items-center pr-2 overflow-hidden h-12 md:h-14">
+                <i class="fa-solid fa-location-dot text-blue-900 ml-4 md:ml-5 text-base md:text-lg"></i>
+                <input type="text" placeholder="Enter your address to see delivery options" 
+                       class="flex-1 h-full px-3 md:px-4 text-sm md:text-base text-gray-700 focus:outline-none bg-transparent placeholder-gray-400 min-w-0">
+                <button class="bg-green-500 hover:bg-green-600 text-white h-8 md:h-10 w-10 md:w-12 rounded-lg flex items-center justify-center transition shadow shrink-0">
+                    <i class="fa-solid fa-magnifying-glass text-sm md:text-base"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Static bootstrap icons on below the image -->
+    <section class="bg-gray-50 py-8 md:py-12 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
+            <div>
+                <div class="bg-white w-10 h-10 md:w-12 md:h-12 mx-auto flex items-center justify-center rounded-full shadow-sm text-blue-900 mb-2 md:mb-3">
+                    <i class="fa-solid fa-store text-base md:text-xl"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 text-sm md:text-base">80 stores</h3>
+                <p class="text-[10px] md:text-xs text-gray-500 mt-1">All around the country</p>
+            </div>           
+            <div>
+                <div class="bg-white w-10 h-10 md:w-12 md:h-12 mx-auto flex items-center justify-center rounded-full shadow-sm text-blue-900 mb-2 md:mb-3">
+                    <i class="fa-solid fa-basket-shopping text-base md:text-xl"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 text-sm md:text-base">Fresh foods</h3>
+                <p class="text-[10px] md:text-xs text-gray-500 mt-1">We guarantee quality</p>
+            </div>
+            <div>
+                <div class="bg-white w-10 h-10 md:w-12 md:h-12 mx-auto flex items-center justify-center rounded-full shadow-sm text-blue-900 mb-2 md:mb-3">
+                    <i class="fa-solid fa-truck-fast text-base md:text-xl"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 text-sm md:text-base">Fast delivery</h3>
+                <p class="text-[10px] md:text-xs text-gray-500 mt-1">Fastest on the market</p>
+            </div>
+            <div>
+                <div class="bg-white w-10 h-10 md:w-12 md:h-12 mx-auto flex items-center justify-center rounded-full shadow-sm text-blue-900 mb-2 md:mb-3">
+                    <i class="fa-solid fa-eye text-base md:text-xl"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 text-sm md:text-base">Live tracking</h3>
+                <p class="text-[10px] md:text-xs text-gray-500 mt-1">Track your order in real time</p>
+            </div>
+        </div>
+    </section>
+<!-- Main navigate cards for next pages -->
+    <section class="max-w-6xl mx-auto px-4 py-10 md:py-16">
+        <div class="flex justify-between items-center mb-6 md:mb-8">
+            <h2 class="text-xl md:text-2xl font-bold text-gray-900">Popular stores</h2>
+            <button class="bg-gray-100 hover:bg-gray-200 text-gray-600 px-3 py-1.5 md:px-4 md:py-2 rounded-md text-xs md:text-sm font-medium transition">See all</button>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
+           
+            
+            <div class="bg-gray-50 rounded-xl p-4 md:p-6 hover:shadow-md transition group">
+                <a href="secondlayout.html" class="block bg-gray-50 rounded-xl p-4 md:p-6 ">
+                <div class="flex justify-end mb-2">
+                    <span class="bg-white text-[10px] md:text-xs font-medium px-2 py-0.5 md:px-3 md:py-1 rounded-full shadow-sm border border-gray-100 text-gray-500">Details</span>
+                </div>
+                <div class="flex flex-col items-center pb-2">
+                    <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center text-blue-800 mb-2">
+                        <i class="fa-solid fa-shrimp text-2xl md:text-4xl"></i>
+                    </div>
+                    <p class="font-semibold text-gray-700 text-xs md:text-base text-center">Twisted Shrimp</p>
+                </div>
+                </a>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-4 md:p-6 hover:shadow-md transition group">
+                <div class="flex justify-end mb-2">
+                    <span class="bg-white text-[10px] md:text-xs font-medium px-2 py-0.5 md:px-3 md:py-1 rounded-full shadow-sm border border-gray-100 text-gray-500">Details</span>
+                </div>
+                <div class="flex flex-col items-center pb-2">
+                    <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center text-green-700 mb-2">
+                        <i class="fa-solid fa-dragon text-2xl md:text-4xl"></i>
+                    </div>
+                    <p class="font-semibold text-gray-700 text-xs md:text-base text-center">Green Dragon</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-4 md:p-6 hover:shadow-md transition group">
+                <div class="flex justify-end mb-2">
+                    <span class="bg-white text-[10px] md:text-xs font-medium px-2 py-0.5 md:px-3 md:py-1 rounded-full shadow-sm border border-gray-100 text-gray-500">Details</span>
+                </div>
+                <div class="flex flex-col items-center pb-2">
+                    <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center text-pink-500 mb-2">
+                        <i class="fa-solid fa-frog text-2xl md:text-4xl"></i>
+                    </div>
+                    <p class="font-semibold text-gray-700 text-xs md:text-base text-center">Froggy</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-4 md:p-6 hover:shadow-md transition group">
+                <div class="flex justify-end mb-2">
+                    <span class="bg-white text-[10px] md:text-xs font-medium px-2 py-0.5 md:px-3 md:py-1 rounded-full shadow-sm border border-gray-100 text-gray-500">Details</span>
+                </div>
+                <div class="flex flex-col items-center pb-2">
+                    <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center text-gray-900 mb-2">
+                        <i class="fa-solid fa-mask text-2xl md:text-4xl"></i>
+                    </div>
+                    <p class="font-semibold text-gray-700 text-xs md:text-base text-center">Dontstealhere</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-4 md:p-6 hover:shadow-md transition group">
+                <div class="flex justify-end mb-2">
+                    <span class="bg-white text-[10px] md:text-xs font-medium px-2 py-0.5 md:px-3 md:py-1 rounded-full shadow-sm border border-gray-100 text-gray-500">Details</span>
+                </div>
+                <div class="flex flex-col items-center pb-2">
+                    <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center text-blue-500 mb-2">
+                        <i class="fa-solid fa-diagram-project text-2xl md:text-4xl"></i>
+                    </div>
+                    <p class="font-semibold text-gray-700 text-xs md:text-base text-center">Blue Honeycomb</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-4 md:p-6 hover:shadow-md transition group">
+                <div class="flex justify-end mb-2">
+                    <span class="bg-white text-[10px] md:text-xs font-medium px-2 py-0.5 md:px-3 md:py-1 rounded-full shadow-sm border border-gray-100 text-gray-500">Details</span>
+                </div>
+                <div class="flex flex-col items-center pb-2">
+                    <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center text-gray-600 mb-2">
+                        <i class="fa-solid fa-leaf text-2xl md:text-4xl"></i>
+                    </div>
+                    <p class="font-semibold text-gray-700 text-xs md:text-base text-center">Old Lotus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contains 4 imagees of workfow using flex-->
+    <section class="max-w-6xl mx-auto px-4 pb-10 md:pb-16">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-6 md:mb-10">How it works?</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+         
+            <div class="flex flex-col">
+                <div class="relative bg-gray-200 h-32 sm:h-40 md:h-48 rounded-xl mb-3 overflow-hidden shadow-sm">
+                    <img src="src/images/store.jpg" alt="Cart" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 w-8 h-8 md:w-10 md:h-10 bg-white flex items-center justify-center font-bold text-sm md:text-lg text-black m-2 rounded-sm shadow-sm">
+                        1
+                    </div>
+                </div>
+                <h3 class="font-bold text-gray-900 text-sm md:text-base">Choose the store</h3>
+                <p class="text-xs md:text-sm text-gray-500 mt-1 leading-snug">Find the favorite store in your area</p>
+            </div>
+            
+            <div class="flex flex-col">
+                <div class="relative bg-gray-200 h-32 sm:h-40 md:h-48 rounded-xl mb-3 overflow-hidden shadow-sm">
+                    <img src="src/images/shop.jpg" alt="Laptop" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 w-8 h-8 md:w-10 md:h-10 bg-white flex items-center justify-center font-bold text-sm md:text-lg text-black m-2 rounded-sm shadow-sm">
+                        2
+                    </div>
+                </div>
+                <h3 class="font-bold text-gray-900 text-sm md:text-base">Shop</h3>
+                <p class="text-xs md:text-sm text-gray-500 mt-1 leading-snug">All from the comfort of your home</p>
+            </div>
+            
+            <div class="flex flex-col">
+                <div class="relative bg-gray-200 h-32 sm:h-40 md:h-48 rounded-xl mb-3 overflow-hidden shadow-sm">
+                    <img src="src/images/delivery.jpg" alt="Delivery" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 w-8 h-8 md:w-10 md:h-10 bg-white flex items-center justify-center font-bold text-sm md:text-lg text-black m-2 rounded-sm shadow-sm">
+                        3
+                    </div>
+                </div>
+                <h3 class="font-bold text-gray-900 text-sm md:text-base">Wait for delivery</h3>
+                <p class="text-xs md:text-sm text-gray-500 mt-1 leading-snug">Delivery is fast and can be tracked!</p>
+            </div>
+            
+            <div class="flex flex-col">
+                <div class="relative bg-gray-200 h-32 sm:h-40 md:h-48 rounded-xl mb-3 overflow-hidden shadow-sm">
+                    <img src="src/images/enjoy.jpg" alt="Enjoy" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 w-8 h-8 md:w-10 md:h-10 bg-white flex items-center justify-center font-bold text-sm md:text-lg text-black m-2 rounded-sm shadow-sm">
+                        4
+                    </div>
+                </div>
+                <h3 class="font-bold text-gray-900 text-sm md:text-base">Enjoy!</h3>
+                <p class="text-xs md:text-sm text-gray-500 mt-1 leading-snug">Don't forget to leave a review!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download icons-->
+    <section class="bg-gray-50 py-12 md:py-20">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <!-- Left: Text & Buttons -->
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Download the ontheshelf. app <br> and shop from anywhere!</h2>
+                <p class="text-gray-500 mb-6 text-sm md:text-base">The app is now available in different stores supporting all systems!</p>
+                
+                <div class="flex flex-wrap justify-center md:justify-start gap-3 md:gap-4">
+                      <button class="bg-black hover:bg-gray-800 text-white flex items-center px-3 py-2 md:px-4 md:py-2 rounded-lg gap-3 transition w-full sm:w-auto justify-center">
+                        <i class="fa-brands fa-apple text-xl md:text-2xl"></i>
+                        <div class="text-left leading-tight">
+                            <p class="text-[9px] md:text-[10px] font-light">Download on the</p>
+                            <p class="text-xs md:text-sm font-bold">App Store</p>
+                        </div>
+                    </button><button class="bg-black hover:bg-gray-800 text-white flex items-center px-3 py-2 md:px-4 md:py-2 rounded-lg gap-3 transition w-full sm:w-auto justify-center">
+                        <i class="fa-brands fa-google-play text-xl md:text-2xl"></i>
+                        <div class="text-left leading-tight">
+                            <p class="text-[9px] md:text-[10px] font-light">GET IT ON</p>
+                            <p class="text-xs md:text-sm font-bold">Google Play</p>
+                        </div>
+                    </button>
+                   
+                    <button class="bg-black hover:bg-gray-800 text-white flex items-center px-3 py-2 md:px-4 md:py-2 rounded-lg gap-3 transition w-full sm:w-auto justify-center">
+                        <i class="fa-solid fa-pen-nib text-xl md:text-xl"></i>
+                        <div class="text-left leading-tight">
+                            <p class="text-[9px] md:text-[10px] font-light">Download from</p>
+                            <p class="text-xs md:text-sm font-bold">Uizard</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 w-full">
+                <img src="src/images/bottom-img.webp" alt="App Mockup" class="rounded-lg shadow-xl w-full object-cover max-h-80 md:max-h-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer elements -->
+    <footer class="hero-pattern text-white py-12 md:py-16">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center md:items-start gap-6 md:gap-8">
+          
+            <div class="flex flex-col items-center md:items-start gap-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-box-open text-lg md:text-xl"></i>
+                    <span class="text-xl md:text-2xl font-bold tracking-tight">ontheshelf.</span>
+                </div>
+                <!-- Fixed max-width to prevent clipping on small mobiles -->
+                <p class="text-gray-300 text-xs md:text-sm w-full text-center md:text-left md:max-w-xs">Fresh goods delivered to your doorstep!</p>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#ins" class="text-white hover:text-green-400 transition"><i class="fa-brands fa-instagram text-lg md:text-xl"></i></a>
+                    <a href="#face" class="text-white hover:text-green-400 transition"><i class="fa-brands fa-facebook text-lg md:text-xl"></i></a>
+                    <a href="#twit" class="text-white hover:text-green-400 transition"><i class="fa-brands fa-twitter text-lg md:text-xl"></i></a>
+                </div>
+            </div>
+
+           <!-- contacts section -->
+            <div class="flex flex-col items-center md:items-end gap-2">
+                <p class="text-white font-medium text-sm md:text-base">Need help?</p>
+                <p class="text-gray-300 text-xs md:text-sm">Our support is here for you 24/7!</p>
+                <div class="flex items-center gap-2 mt-1">
+                    <i class="fa-solid fa-phone text-white text-sm md:text-base"></i>
+                    <p class="text-white font-medium text-base md:text-lg">+91 8428859290</p>
+                </div>
+                <div class="flex items-center gap-2 mt-1">
+                    <i class="fa-solid fa-envelope text-white text-sm md:text-base"></i>
+                    <p class="text-white font-medium text-base md:text-lg">kastro2004@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
