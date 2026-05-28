@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERP Dashboard</title>
+
+  <link rel="stylesheet" href="../output.css">
+</head>
+
+
+<!-- Main Dashboard -->
+<body class="font-sans">
+
+<!-- navbar  section -->
+<header class="flex items-center  bg-gray-900 text-white px-6 py-4 sticky top-0 z-50">
+
+ 
+  <div class="flex items-center gap-3 ">
+    <img src="../assets/images/logo-horizontal.webp" class="h-10" />
+  </div>
+
+  
+  <nav class="flex gap-49 text-sm ml-20">
+    <ul class="flex gap-6 text-sm ">
+
+      <!-- <li class="cursor-pointer hover:text-gray-300">Dashboard</li> -->
+
+
+      <li class="relative group cursor-pointer pb-2">
+        Users ▼
+        <div class="absolute hidden group-hover:block bg-white text-black mt-2 rounded-lg shadow-lg min-w-[150px]">
+          <a href="customerslist.html" class="px-4 py-2 hover:bg-gray-100 block">Customer Master</a>
+          <p class="px-4 py-2 hover:bg-gray-100">Manage Users</p>
+        </div>
+      </li>
+
+   
+      <li class="relative group cursor-pointer pb-2">
+        Reports ▼
+        <div class="absolute hidden group-hover:block bg-white text-black mt-2 rounded-lg shadow-lg min-w-[150px]">
+          <p class="px-4 py-2 hover:bg-gray-100">Sales</p>
+          <p class="px-4 py-2 hover:bg-gray-100">Customers</p>
+        </div>
+      </li>
+
+
+      <li class="relative group cursor-pointer pb-2">
+        Settings ▼
+        <div class="absolute hidden group-hover:block bg-white text-black mt-2 rounded-lg shadow-lg min-w-[150px]">
+          <p class="px-4 py-2 hover:bg-gray-100">Profile</p>
+          <p class="px-4 py-2 hover:bg-gray-100">System</p>
+        </div>
+      </li>
+
+    </ul>
+  </nav>
+
+ <!-- left side customer profile section -->
+  <div class="relative group cursor-pointer ml-170 ">
+    <img src="../assets/images/customer.png" class="h-10 w-10 rounded-full border-2 border-white" />
+
+    <div class="absolute right-0 hidden group-hover:block bg-white text-black mt-2 rounded-lg shadow-lg w-36">
+      <p class="px-4 py-2  hover:bg-gray-100">Name : Akash</p>
+      <p class="px-4 py-2 hover:bg-gray-100">Role : Manager</p>
+      <a href="customerslist.html"
+   class="px-4 py-2 bg-red-300 text-white rounded-md hover:bg-red-300 transition block text-center">
+  Logout
+</a>
+    </div>
+  </div>
+
+</header>
+
+<!-- 
+<div class="flex justify-end p-8">
+  <button onclick=""
+    
+  </button>
+</div> -->
+
+
+<section class="flex justify-between items-center px-8 py-4 flex-col md:flex-row gap-4 md:gap-0">
+
+  <h2 class="text-xl font-semibold text-gray-900">Dashboard</h2>
+
+  <!-- <input type="text" placeholder="Search customers..."
+    class="" /> -->
+
+</section>
+
+<!-- Cards in Dashboadrd for future edits -->
+<section class="p-8 bg-gray-100 min-h-screen">
+
+  
+  <div class="mb-8">
+    <h1 class="text-3xl font-bold text-gray-800">
+      Customer Management
+    </h1>
+
+    <p class="text-gray-500 mt-2">
+      View, manage, and monitor all customer details in one place
+    </p>
+  </div>
+
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
+
+      <div class="flex items-center justify-between">
+
+        <h2 class="text-lg font-semibold text-gray-700">
+          Total Customers
+        </h2>
+
+
+      </div>
+
+    
+
+    </div>
+
+    
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
+
+      <div class="flex items-center justify-between">
+
+        <h2 class="text-lg font-semibold text-gray-700">
+          Revenue
+        </h2>
+
+
+      </div>
+
+      
+
+    </div>
+
+    
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300 h-45">
+
+      <div class="flex items-center justify-between">
+
+        <h2 class="text-lg font-semibold text-gray-700">
+          Employees
+        </h2>
+
+        
+
+      </div>
+
+      
+
+    </div>
+
+    
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
+
+      <div class="flex items-center justify-between">
+
+        <h2 class="text-lg font-semibold text-gray-700">
+          Pending Orders
+        </h2>
+
+        
+
+      </div>
+
+      
+
+    </div>
+
+    
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
+
+      <div class="flex items-center justify-between">
+
+        <h2 class="text-lg font-semibold text-gray-700">
+          Active Projects
+        </h2>
+
+        
+
+      </div>
+
+      
+
+    </div>
+
+    
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300 h-45">
+
+      <div class="flex items-center justify-between">
+
+        <h2 class="text-lg font-semibold text-gray-700">
+          Support Tickets
+        </h2>
+
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+</body>
+</html>

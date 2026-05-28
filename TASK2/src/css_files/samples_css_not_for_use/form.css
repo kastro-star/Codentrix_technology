@@ -1,0 +1,136 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:15px;
+}
+
+.form-box{
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-box h2{
+    margin-bottom:25px;
+    color:#333;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:18px;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:600;
+    color:#444;
+}
+
+/* used for input box sizing */
+.form-group input,
+.form-group textarea,
+.form-group select{
+    padding:12px;
+    border:1px solid #dcdcdc;
+    border-radius:8px;
+    outline:none;
+    font-size:14px;
+}
+
+/* fixed the  size of the text area adress */
+.form-group textarea{
+    resize:none;
+    height:90px;
+}
+
+/*Border for the input labels */
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+    border-color:#2563eb;
+}
+
+.button-box{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:20px;
+}
+
+.button-box button{
+    padding:12px 24px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-size:14px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.button-box button:hover{
+    background:#1d4ed8;
+}
+
+.logo-box{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.logo-box img{
+    width:220px;
+    height:70px;
+    object-fit:contain;
+}
+
+
+/* Make mobile responsive queries */
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+        align-items:flex-start;
+    }
+
+    .form-box{
+        width:100%;
+        padding:20px;
+        margin-top:30px;
+    }
+
+    .logo-box img{
+        width:180px;
+        height:60px;
+    }
+
+    .form-box h2{
+        font-size:22px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select{
+        font-size:13px;
+        padding:10px;
+    }
+
+    .button-box button{
+        width:100%;
+    }
+
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ERP Login</title>
+  <link rel="stylesheet" href="../output.css">
+</head>
+
+
+<!-- for tailwind setup  -->
+ <!-- npm install tailwindcss @tailwindcss/cli
+ @import "tailwindcss"; save in input.css  -->
+ <!-- After    ==> npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
+
+<!-- Login page File  -->
+<body class="min-h-screen overflow-hidden">
+
+  <!-- Left side box that contains only images -->
+  <div class="flex min-h-screen overflow-hidden">
+
+    
+    <div class="hidden md:flex w-[580px] items-center justify-center">
+
+      <div class="text-center text-white px-10">
+
+        <img
+          src="../assets/images/logo-horizontal.webp"
+          class="w-72 mx-auto mb-6">
+      </div>
+
+    </div>
+
+    
+
+
+
+    <!-- Right side box login box contents -->
+    <div class="w-full md:w-1/2 flex items-center justify-center p-6 ">
+
+      
+      <div class="w-[350px] bg-white rounded-3xl shadow-2xl p-4 h-[530px] ">
+
+        
+        <div class="flex flex-col items-center">
+
+          <img
+            src="../assets/images/logo.jpg"
+            class="w-24 h-24 rounded-full object-cover"
+          >
+
+          <h1 class="text-3xl font-bold mt-5 text-gray-800">
+            Sign in
+          </h1>
+
+          <p class="text-gray-500 mt-2">
+            Welcome back Admin
+          </p>
+
+        </div>
+
+        
+        <div class="mt-8 space-y-5">
+
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="w-full border border-gray-400
+            rounded-xl px-4 py-3 outline-none
+            focus:ring-2 focus:ring-gray-600"
+          >
+
+          <input
+            type="password"
+            placeholder="Enter your password"
+            class="w-full border border-gray-400
+            rounded-xl px-4 py-3 outline-none
+            focus:ring-2 focus:ring-gray-600"
+          >
+
+        </div>
+
+       
+        <button
+          onclick="window.location.href='Dashboard.html'"
+          class="w-full mt-6 bg-gray-800
+          hover:bg-gray-900 text-white
+          py-3 rounded-xl transition duration-300">
+
+          Login
+
+        </button>
+
+        
+        <div class="mt-6 text-center">
+
+          <p class="text-sm text-gray-500">
+            Don't have an account?
+            <span class="text-blue-600 cursor-pointer">
+              Sign up
+            </span>
+          </p>
+
+          <button
+            onclick="window.location.href='Dashboard.html'"
+            class="mt-5 bg-gray-600 hover:bg-gray-700
+            text-white px-5 py-2 rounded-lg
+            text-sm transition duration-300">
+
+            Browse as Guest
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

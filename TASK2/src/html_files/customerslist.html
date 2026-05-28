@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERP Dashboard</title>
+
+  <link rel="stylesheet" href="../output.css">
+</head>
+
+<body class="font-sans">
+
+<!-- for tailwind setup  -->
+ <!-- npm install tailwindcss @tailwindcss/cli
+ @import "tailwindcss"; save in input.css  -->
+ <!-- After    ==> npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
+
+
+<!-- Customer List Show page -->
+ <!-- Navbar -->
+<header class="flex items-center  bg-gray-900 text-white px-6 py-4 sticky top-0 z-50">
+
+ 
+  <div class="flex items-center gap-3 ">
+    <img src="../assets/images/logo-horizontal.webp" class="h-10" />
+  </div>
+
+ 
+  <div class="relative group cursor-pointer ml-255 ">
+    <img src="../assets/images/customer.png" class="h-10 w-10 rounded-full border-2 border-white" />
+
+    <div class="absolute right-0 hidden group-hover:block bg-white text-black mt-2 rounded-lg shadow-lg w-36">
+      <p class="px-4 py-2  hover:bg-gray-100">Name : Akash</p>
+      <p class="px-4 py-2 hover:bg-gray-100">Role : Manager</p>
+      <a href="customerslist.html"
+   class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition block text-center">
+  Logout
+</a>
+    </div>
+  </div>
+
+</header>
+
+<!-- form page navigation  -->
+<div class="flex justify-end p-8">
+  <button onclick="window.location.href='form.html'"
+    class="bg-gray-800 text-green-100 px-4 py-2 rounded-lg hover:bg-gray-700">
+    Create a new User
+  </button>
+</div>
+
+
+<section class="flex justify-between items-center px-8 py-4 flex-col md:flex-row gap-4 md:gap-0">
+
+  <h2 class="text-xl font-semibold text-gray-900">Customer Management</h2>
+
+  <input type="text" placeholder="Search customers..."
+    class="border border-gray-300 px-3 py-2 rounded-lg w-full md:w-64 outline-none focus:ring-2 focus:ring-gray-400" />
+
+</section>
+
+
+
+
+<!-- Table Section -->
+<section class="px-8">
+
+  <div class="overflow-hidden rounded-lg shadow-lg bg-white">
+
+    <table class="w-full border-collapse">
+
+      <thead class="bg-gray-800 text-white text-xs uppercase tracking-wider text-center">
+        <tr>
+          <th class="p-3 border-r">S.No</th>
+          <th class="p-3 border-r">Name</th>
+          <th class="p-3 border-r">Email</th>
+          <th class="p-3 border-r">Phone</th>
+          <th class="p-3 border-r">Address</th>
+          <th class="p-3">Status</th>
+        </tr>
+      </thead>
+
+      <tbody class="text-sm text-gray-700 text-center">
+
+        <tr class="border-b hover:bg-blue-100">
+          <td class="p-3 border-r">1</td>
+          <td class="p-3 border-r">Kastro</td>
+          <td class="p-3 border-r">kastro2004@gmail.com</td>
+          <td class="p-3 border-r">9876543210</td>
+          <td class="p-3 border-r">Chennai</td>
+          <td class="p-3">
+            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
+              Active
+            </span>
+          </td>
+        </tr>
+
+        <tr class="border-b hover:bg-blue-100 bg-gray-50">
+          <td class="p-3 border-r">2</td>
+          <td class="p-3 border-r">Ajay</td>
+          <td class="p-3 border-r">Ajay2003@gmail.com</td>
+          <td class="p-3 border-r">9123456780</td>
+          <td class="p-3 border-r">Madurai</td>
+          <td class="p-3">
+            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-semibold">
+              Inactive
+            </span>
+          </td>
+        </tr>
+
+        <tr class="hover:bg-blue-100">
+          <td class="p-3 border-r">3</td>
+          <td class="p-3 border-r">Kumaran</td>
+          <td class="p-3 border-r">Kumaran2001@gmail.com</td>
+          <td class="p-3 border-r">9988776655</td>
+          <td class="p-3 border-r">Madurai</td>
+          <td class="p-3">
+            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
+              Active
+            </span>
+          </td>
+        </tr>
+
+      </tbody>
+
+    </table>
+  </div>
+
+</section>
+<!-- Future pagination changing section -->
+<div class="flex justify-end gap-2 p-6">
+
+  <button class="bg-gray-800 text-white px-3 py-2 rounded">Prev</button>
+
+  <button class="bg-gray-300 text-black px-3 py-2 rounded">1</button>
+  <button class="bg-gray-300 text-black px-3 py-2 rounded">2</button>
+  <button class="bg-gray-300 text-black px-3 py-2 rounded">3</button>
+
+  <button class="bg-gray-800 text-white px-3 py-2 rounded">Next</button>
+
+</div>
+
+</body>
+</html>
